@@ -1,0 +1,203 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #E4D8CC;
+  }
+
+  a {text-decoration: none;}
+
+  .navbar{
+    position: sticky;
+    top: 0;
+    height: 80px;
+    background-color: #7D5452;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar a{
+    font-size: 14px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .menu-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .menu-links a {
+    padding: 8px 16px;
+  }
+
+  .menu-links a:active,
+  .menu-links a:focus,
+.menu-links a:hover {
+    font-family: Inter;
+    color: #FAC6BF;
+    font-weight: 700;
+}
+
+.menu-btn{
+  font-size: 32px;
+  color: #E4D8CC;
+  display: none;
+  cursor: pointer;
+}
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 50px; 
+    height: auto;
+    margin-right: 15px;
+    border-radius: 50%;
+  }
+
+  .logo a{
+    font-family: Inter;
+    color: #E4D8CC;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .Products, .Orders, .About, .FAQ, .Login, .Signup{
+    color: #E4D8CC;
+  }
+  
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-container{
+  margin-right: 90px;
+}
+
+
+.picture img{
+    width:650px;
+    height: auto;
+    max-height: 100%;
+    margin-left: 10%;
+}
+
+
+.container1 {
+  max-width: 43rem;
+  padding: 0 1rem;
+  margin: 4rem auto;
+}
+
+
+#tranding .tranding-slider {
+  height: 32rem;
+  padding: 4rem 12rem;
+  position: relative;
+  z-index: 0;
+}
+
+.tranding-slide {
+  width: 17rem;
+  height: 22rem;
+  position: relative;
+}
+
+
+.tranding-slide .tranding-slide-img img {
+  width: 17rem;
+  height: 22rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+
+
+/* CHATBOX
+=============== */
+.chatbox {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* CONTENT IS CLOSE */
+.chatbox__support {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    z-index: -123456;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+/* CONTENT ISOPEN */
+.chatbox--active {
+    transform: translateY(-40px);
+    z-index: 123456;
+    opacity: 1;
+    
+}
+
+/* BUTTON */
+.chatbox__button {
+    text-align: right;
+}
+
+
+/* HEADER */
+.chatbox__header {
+    position: sticky;
+    top: 0;
+    background: orange;
+}
+
+/* MESSAGES */
+.chatbox__messages {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+}
+
+.messages__item {
+    background: orange;
+    max-width: 60.6%;
+    width: fit-content;
+}
+
+.messages__item--operator {
+    margin-left: auto;
+}
+
+.messages__item--visitor {
+    margin-right: auto;
+}
+
+/* FOOTER */
+.chatbox__footer {
+    position: sticky;
+    bottom: 0;
+}

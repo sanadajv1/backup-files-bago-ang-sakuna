@@ -1,0 +1,110 @@
+body{
+    background-color: #E4D8CC;
+    color: #7D5452;
+}
+
+
+
+.title-header{
+    font-family:'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.year{
+    font-family:'Inter', sans-serif;
+}
+
+.year-option{
+    background-color: transparent;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+
+}
+
+.quantity-table{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px;
+}
+
+.quantity{
+    width: 60vw;
+    background-color: #D0A59F;
+    padding: 20px 40px;
+    border-radius: 15px;
+}
+
+.quantity-sold{
+    font-family: 'Inter', sans-serif;
+    margin-top: 10px;
+}
+
+.table-1212{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.main-table{
+    text-align:center;
+    background-color: #D0A59F;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    width: 60vw;
+   }
+
+   .Head-title{
+    font-family: Inter;
+    text-align:center;
+    font-size: 40px;
+    font-weight: bold;
+   }
+
+   .th-deg {
+    font-family: Inter;
+    padding: 30px;
+   }
+
+   .btn-confirm{
+    padding: 15px 40px;
+    background-color: #FAC6BF;
+    border-radius: 100px;
+    transition: background-color 0.3s, color 0.3s;
+   }
+
+   .th-deg a {
+    text-decoration: none;
+    color: #7D5452;
+    }
+
+    .btn-confirm:hover {
+        background-color: #e5b5af;
+    }
+
+   .main-table tr:not(:last-child) {
+    border-bottom: 1px solid #7D5452;
+
+}
+
+.main-table th:not(:last-child),
+.main-table td:not(:last-child) {
+    border-right: 1px solid #7D5452;
+}
+
+.search-bar input{
+    font-family: Inter;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #7D5452;
+    border-radius: 50px;
+    padding: 10px 20px;
+   }
+
+   .search-bar input::placeholder {
+    font-family: Inter;
+    color: #7D5452;
+}

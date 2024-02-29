@@ -1,0 +1,335 @@
+body{
+    background-color: #E4D8CC;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-link {
+    text-decoration: none;
+}
+
+.orders{
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #7D5452;
+    margin: 20px 30px;
+}
+
+/* order items */
+
+.order-tracking-status img{
+    height: auto;
+    width: 80vw;
+    margin: 20px 0px 60px 0px;
+}
+
+.custom-section {
+    background-color: #E4D8CC;
+    /* Add any other styles for your custom section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+
+}
+
+.order-container {
+    display: flex;
+    flex-direction: column; /* Display items in a column */
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.order-item {
+    background-color: #D0A59F; /* Set background color for each order item */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 80vw;
+}
+
+.upper-part{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.img-fluid img {
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    margin-right: 20px; /* Add some space between image and details */
+}
+
+.order-details {
+    flex: 1; /* Take remaining space */
+}
+
+.product-names {
+    font-family: Inter;
+    color: #7D5452;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.order-info {
+    margin-bottom: 5px;
+    opacity: .7;
+    color: #7D5452;
+    opacity: .7;
+}
+
+.order-stats{
+    text-transform: uppercase;
+    color: #E4D8CC;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+/* Low Part */
+
+
+
+
+.lower-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.main-description{
+    display: flex;
+    flex-direction: row;
+
+    color: #7D5452;
+    gap: 30px;
+}
+
+.paragraph-1{
+    width: 50%;
+}
+
+.paragraph-2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 30%;
+}
+
+.paragraph-3{
+    width:20%;
+}
+
+.paragraph-4{
+    width:50%;
+}
+
+.qrcode img{
+    height: 130px;
+    width: auto;
+    margin-top: 10px;
+}
+
+.pos-price{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 10px;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+
+.total {
+    color: #E4D8CC;
+    margin-bottom: 8px; /* Adjust margin as needed */
+}
+
+.price-num-1, .total-1 {
+    color: #7D5452;
+
+}
+.price-num {
+    font-family: Inter;
+    font-size: 36px;
+    color: #7D5452;
+}
+
+.buttons{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.custom-button {
+    background-color: transparent;
+    border: 1.5px solid #7D5452;
+    color: #7D5452;
+    padding: 10px 30px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, opacity 0.3s;
+    margin-left: 10px;
+}
+
+.custom-button:hover {
+    background-color: #7D5452;
+    color: #E4D8CC;
+}
+
+.custom-button:active {
+    opacity: 0.5;
+}
+
+.track-order {
+    /* Add any styles for your track order section */
+}
+
+.line {
+    border-top: 1px solid #7D5452; /* Change color, width, and style as needed */
+    margin: 40px 10px 40px 10px;
+    opacity: .5;
+}
+
+/* STATUS */
+
+.status-links {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    width: 80vw;
+    max-width: 80vw;
+    border-bottom: 1px solid #7D5452;
+    gap: 30px;
+}
+
+.status-link {
+    text-decoration: none;
+    color: #7D5452;
+
+
+    position: relative; /* Add relative positioning */
+    padding: 10px 20px; /* Add padding to the links */
+}
+
+.clickable-link:active {
+    text-decoration: underline; /* Apply underline when the link is clicked */
+}
+
+.status-link:hover {
+    color: #E4D8CC;
+    background-color: #7D5452; /* Change background color on hover */
+    opacity: .5;
+}
+.status-links a.selected {
+    font-family: Inter;
+font-weight: bold; /* Highlight selected link with bold font */
+color: #D0A59F; /* Set your desired highlight color */
+}
+
+.cart-link {
+display: flex;
+align-items: center;
+text-decoration: none;
+color: #7D5452; /* Set your desired text color */
+}
+
+.cart-icon {
+margin: 0px 30px 0 5px; /* Adjust the margin as needed */
+width: 30px; /* Set your desired width */
+}
+
+
+
+
+.button-underlined {
+text-decoration: underline;
+}
+
+/* added by sam, para to doon sa order received na button*/
+.disabled-link {
+pointer-events: none; /* This will make the link not clickable */
+opacity: 0.5; /* You can adjust the opacity to visually indicate it's disabled */
+cursor: not-allowed; /* Display the cursor as 'not allowed' */
+}
+
+
+  /* CHATBOX
+=============== */
+.chatbox {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* CONTENT IS CLOSE */
+.chatbox__support {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    z-index: -123456;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+/* CONTENT ISOPEN */
+.chatbox--active {
+    transform: translateY(-40px);
+    z-index: 123456;
+    opacity: 1;
+
+}
+
+/* BUTTON */
+.chatbox__button {
+    text-align: right;
+}
+
+
+/* HEADER */
+.chatbox__header {
+    position: sticky;
+    top: 0;
+    background: orange;
+}
+
+/* MESSAGES */
+.chatbox__messages {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+}
+
+.messages__item {
+    background: orange;
+    max-width: 60.6%;
+    width: fit-content;
+}
+
+.messages__item--operator {
+    margin-left: auto;
+}
+
+.messages__item--visitor {
+    margin-right: auto;
+}
+
+/* FOOTER */
+.chatbox__footer {
+    position: sticky;
+    bottom: 0;
+}
+

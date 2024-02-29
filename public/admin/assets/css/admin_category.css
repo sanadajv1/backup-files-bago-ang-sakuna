@@ -1,0 +1,36 @@
+body{
+    background-color: #E4D8CC;
+    color: #7D5452;
+}
+
+.h2_font{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.div_center{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 20px;
+}
+
+.input-category input {
+    appearance: none;
+    background-color: transparent;
+    border-color: #7D5452;
+    padding: 10px;
+}
+
+.btn-add input{
+    padding: 10px 40px;
+    background-color: #7D5452;
+    width: fit-content;
+    color: #E4D8CC;
+}
+
+td{
+    padding: 30px;
+    border: 1px solid #7D5452;
+}

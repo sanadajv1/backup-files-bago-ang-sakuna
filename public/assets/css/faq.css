@@ -1,0 +1,145 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #E4D8CC;
+    
+  }
+
+  a {text-decoration: none;}
+
+
+  /* CHATBOX
+=============== */
+.chatbox {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* CONTENT IS CLOSE */
+.chatbox__support {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    z-index: -123456;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+/* CONTENT ISOPEN */
+.chatbox--active {
+    transform: translateY(-40px);
+    z-index: 123456;
+    opacity: 1;
+    
+}
+
+/* BUTTON */
+.chatbox__button {
+    text-align: right;
+}
+
+
+/* HEADER */
+.chatbox__header {
+    position: sticky;
+    top: 0;
+    background: orange;
+}
+
+/* MESSAGES */
+.chatbox__messages {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+}
+
+.messages__item {
+    background: orange;
+    max-width: 60.6%;
+    width: fit-content;
+}
+
+.messages__item--operator {
+    margin-left: auto;
+}
+
+.messages__item--visitor {
+    margin-right: auto;
+}
+
+/* FOOTER */
+.chatbox__footer {
+    position: sticky;
+    bottom: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+
+.faq{
+    font-family: Inter;
+    color: #7D5452;
+    margin-bottom: 5vh;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.accordion{
+    max-width: 50vw;
+}
+
+.label p{
+  max-width: 40vw;
+}
+
+.accordion .contentBx{
+    position: relative;
+    margin: 10px 0px;
+}
+
+.accordion .contentBx .label{
+    position: relative;
+    padding: 10px;
+    background: #D0A59F;
+    color: #7D5452;
+    cursor: pointer;
+}
+
+.accordion .contentBx .label::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.accordion .contentBx.active .label::before{
+    content: '-';
+}
+
+.accordion .contentBx .content{
+    position: relative;
+    background: #dabfb5;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+    overflow-y: auto;
+}
+
+.accordion .contentBx.active .content{
+    height: auto;
+    padding: 15px;
+}
+
+.content p {
+    color: #7D5452;
+}

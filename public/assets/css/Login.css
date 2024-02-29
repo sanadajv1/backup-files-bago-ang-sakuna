@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #E4D8CC;
+  }
+
+  a {text-decoration: none;}
+
+  .navbar{
+    height: 80px;
+    background-color: #7D5452;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar a{
+    font-size: 14px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .menu-links {
+    display: flex;
+    gap: 40px;
+  }
+
+  .menu-links a {
+    padding: 8px 16px;
+  }
+
+  .menu-links a:active,
+  .menu-links a:focus,
+.menu-links a:hover {
+    color: #FAC6BF;
+    font-weight: 700;
+    /* Add any additional styling you want for the click effect */
+}
+
+.menu-btn{
+  font-size: 32px;
+  color: #E4D8CC;
+  display: none;
+  cursor: pointer;
+}
+
+  .logo {
+    display: flex;
+    align-items: center; /* Vertically center the image */
+  }
+
+  .logo img {
+    width: 50px; /* Adjusted size of the logo image */
+    height: auto;
+    margin-right: 15px; /* Add some spacing between the image and text */
+    border-radius: 50%;
+  }
+
+  .logo a{
+    color: #E4D8CC;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .Products, .Orders, .About, .FAQ, .Login, .Signup{
+    color: #E4D8CC;
+  }
+
+  .Login{
+    color: #FAC6BF;
+    font-weight: 700;
+  }
+
+  
+  #Welcome{
+    position: absolute;
+    margin-left: 46%;
+    color: #7D5452;
+    font-size: 20px;
+    top: 260%;
+    transform: translate(-50%, -50%);
+  }
+
+  #login-form {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 50%;
+    top: 500%;
+    padding: 20px;
+    background-color: #E4D8CC;
+    border-radius: 20px;
+    box-shadow: -7px 7px 26px -3px rgba(0, 0, 0, 0.25), -8px 8px 18px 0px rgba(255, 255, 255, 0.25) inset;
+    transform: translate(-50%, -50%);
+  }
+
+  #login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #7D5452;
+    opacity: .7;
+  }
+
+  #login-form input[type="text"],
+  #login-form input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(125,84,82,.5);
+    background-color: transparent;
+    outline: none;
+    color: #7D5452;
+    opacity: .7;
+  }
+
+  #login-form button {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #D0A59F;
+    color: #7D5452;
+    border: none;
+    cursor: pointer;
+  }
+
+  #login-form button:hover {
+    background-color: #b9948f;
+    color: #7D5452;
+}
+
+  #login-form a{
+    margin-left: 70%;
+    text-decoration: none;
+    color: #D0A59F;
+  }
+
+  @media (max-width: 53rem) {
+    .menu{
+      display: none;
+    }
+
+    .menu-btn{
+      display: block;
+    }
+  }

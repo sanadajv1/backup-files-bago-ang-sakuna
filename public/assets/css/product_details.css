@@ -1,0 +1,277 @@
+body{
+    background-color: #E4D8CC;
+}
+
+.product-details{
+    margin: 70px 0px 70px 0px;
+    display: flex;
+    color: #7D5452;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product-img{
+    height:600px;
+    width: 600px;
+    overflow: hidden;
+}
+.product-img img {
+    width: 100%; /* Make the image fill the container width */
+    height: 100%; /* Make the image fill the container height */
+    object-fit: contain; /* Maintain the aspect ratio and cover the container */
+  }
+
+.detail-box1{
+    margin-left: 60px;
+}
+
+
+.product-name{
+    font-family: Inter;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+
+.price{
+    color: #D0A59F;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 40px 0px 50px 0px;
+}
+
+.names{
+    font-family: Inter;
+    margin-bottom: 15px;
+    font-size: 1em;
+    opacity: .7;
+}
+
+.color-choices{
+    margin: 10px 0px 0px 30px;
+}
+
+.color-primary{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 7px;
+}
+.color-primary1{
+    margin-left: 37px;
+}
+
+.primary-div{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin-bottom: 10px;
+}
+
+.color-secondary{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 7px;
+}
+.color-secondary1{
+    margin-left: 15px;
+}
+
+.secondary-div{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin-bottom: 20px;
+}
+
+.color-none{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 7px;
+    border: 2px solid #7D5452;
+    background: linear-gradient(to bottom right, transparent 48%, #7D5452 48%, #7D5452 52%, transparent 52%);
+}
+
+.button-choice{
+    border-radius: 50px;
+    background: #E4D8CC;
+    width: 90px;
+    height: 35px;
+    margin-right: 15px;
+    cursor: pointer;
+    box-shadow: -4px 4px 4px 0px rgba(255, 255, 255, 0.25) inset;
+    filter: drop-shadow(-1px 5px 4px rgba(0, 0, 0, 0.15));
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+
+
+.size-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.size-option{
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    box-shadow:
+        inset -4px 4px 4px rgba(255, 255, 255, 0.5), /* Inner shadow */
+        -1px 2px 4px rgba(0, 0, 0, 0.5); /* Drop shadow */
+    outline: none;
+}
+
+
+
+button[type="submit"],
+input[type="submit"]{
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: rgba(125, 84, 82, 0.70);
+    width: 150px;
+    height: 50px;
+    color: #E4D8CC;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+    outline: none;
+}
+.size-option-label:hover {
+    transform: scale(1.3);
+}
+
+
+.color-option-label.selected {
+    transform: scale(1.3);
+}
+
+.color-option {
+    display: none; /* Hide default radio button */
+}
+
+/* Add hover effect if desired */
+.color-option-label:hover {
+    transform: scale(1.3);
+}
+
+.color-option-label.selected {
+    transform: scale(1.3);
+}
+
+
+
+.disabled {
+    pointer-events: none; /* Disable pointer events for the label */
+    opacity: 0.5; /* Add a visual cue that the option is disabled */
+}
+
+  /* CHATBOX
+=============== */
+.chatbox {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* CONTENT IS CLOSE */
+.chatbox__support {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    z-index: -123456;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+/* CONTENT ISOPEN */
+.chatbox--active {
+    transform: translateY(-40px);
+    z-index: 123456;
+    opacity: 1;
+
+}
+
+/* BUTTON */
+.chatbox__button {
+    text-align: right;
+}
+
+
+/* HEADER */
+.chatbox__header {
+    position: sticky;
+    top: 0;
+    background: orange;
+}
+
+/* MESSAGES */
+.chatbox__messages {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+}
+
+.messages__item {
+    background: orange;
+    max-width: 60.6%;
+    width: fit-content;
+}
+
+.messages__item--operator {
+    margin-left: auto;
+}
+
+.messages__item--visitor {
+    margin-right: auto;
+}
+
+/* FOOTER */
+.chatbox__footer {
+    position: sticky;
+    bottom: 0;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-link {
+    text-decoration: none;
+}
+
+.cart-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #7D5452; /* Set your desired text color */
+}
+
+    .cart-icon {
+    margin: 0px 30px 0 5px; /* Adjust the margin as needed */
+    width: 30px; /* Set your desired width */
+}
